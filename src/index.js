@@ -3,10 +3,6 @@ import './styles.css';
 const location = document.querySelector('[data-location]');
 const form = document.querySelector('form');
 
-// function convertKelvinToFahren(kelvinTemp) {
-//   formula - 1.8*(K-273) + 32
-// }
-
 async function tapWeatherAPI() {
   try {
     // get API weather data
@@ -20,6 +16,10 @@ async function tapWeatherAPI() {
   }
 }
 
+function convertKelvinToFahren(K) {
+  return Math.round(1.8 * (K - 273) + 32);
+}
+
 async function Weather() {
   // Factory function
   const weatherData = await tapWeatherAPI();
@@ -31,6 +31,7 @@ async function Weather() {
         location: weatherData.name,
         // date: ,
         // time: ,
+        temp: convertKelvinToFahren(weatherData.main.temp),
       };
     },
   };
@@ -42,3 +43,5 @@ form.addEventListener('submit', async (e) => {
   // weatherInfo.createWeather();
   console.log(weatherInfo.createWeather());
 });
+
+export default Weather;
