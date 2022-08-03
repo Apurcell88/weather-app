@@ -28,7 +28,6 @@ function convertMeterToMile(m) {
 async function Weather() {
   // Factory function
   const weatherData = await tapWeatherAPI();
-  console.log(weatherData);
   return {
     createWeather() {
       return {
@@ -48,8 +47,7 @@ async function Weather() {
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
   const weatherInfo = await Weather();
-  // weatherInfo.createWeather();
-  console.log(weatherInfo.createWeather());
+  console.log(weatherInfo.createWeather().temp);
 });
 
 export default Weather;
