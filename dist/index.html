@@ -15,23 +15,34 @@
         <div class="main">
             <div class="weather-conditions-container">
                 <div class="main-weather-info">
-                    <button class="toggle-fahren-celsius">Display Celsius</button>
-                    <form>
-                        <label for="fahren-celsius"></label>
-                        <input data-location type="text" id="fahren-celsius" name="fahren-celsius" required placeholder="Search location">
-                        <button data-search-btn class="search">Search</button>
-                    </form>
+                    <ul class="location-info-list">
+                        <li class="location-info">Cloudy</li>
+                        <li class="location-info">Chicago</li>
+                        <li class="location-info">83 F</li>
+                        <button class="toggle-fahren-celsius">Display Celsius</button>
+                        <form>
+                            <label for="fahren-celsius"></label>
+                            <input data-location type="text" id="fahren-celsius" name="fahren-celsius" required placeholder="Search location">
+                            <button data-search-btn class="search">Search</button>
+                        </form>
+                    </ul>
+                    
+                    
                 </div>
-                <div class="weather-snippets"></div>
+                <div class="weather-snippets">
+                    <ul class="weather-info-list">
+                        
+                    </ul>
+                </div>
             </div>
-            <div class="daily-weather-container">
+            <!-- <div class="daily-weather-container">
                 <div class="daily-hourly-btn-container">
                     <button>Daily</button>
                     <button>Hourly</button>
                 </div>
                 <div class="days-container"></div>
                 <div class="temps-container"></div>
-            </div>
+            </div> -->
         </div>
         
 
