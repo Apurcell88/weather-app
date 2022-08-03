@@ -1,4 +1,5 @@
 import './styles.css';
+import { format } from 'date-fns';
 
 const location = document.querySelector('[data-location]');
 const form = document.querySelector('form');
@@ -20,6 +21,10 @@ function convertKelvinToFahren(K) {
   return Math.round(1.8 * (K - 273) + 32);
 }
 
+function convertMeterToMile(m) {
+  return `${Math.round(m * 2.237)} mph`;
+}
+
 async function Weather() {
   // Factory function
   const weatherData = await tapWeatherAPI();
@@ -29,9 +34,12 @@ async function Weather() {
       return {
         sky: weatherData.weather[0].description,
         location: weatherData.name,
-        // date: ,
-        // time: ,
+        date: format(new Date(), 'EEEE, MMM do yy'),
+        time: format(new Date(), 'h:m aaa'),
         temp: convertKelvinToFahren(weatherData.main.temp),
+        feelsLike: convertKelvinToFahren(weatherData.main.feels_like),
+        humidity: weatherData.main.humidity,
+        wind: convertMeterToMile(weatherData.wind.speed),
       };
     },
   };
