@@ -16,9 +16,9 @@
             <div class="weather-conditions-container">
                 <div class="main-weather-info">
                     <ul class="location-info-list">
-                        <li class="location-info">Cloudy</li>
-                        <li class="location-info">Chicago</li>
-                        <li class="location-info">83 F</li>
+                        <li data-clouds class="location-info">Cloudy</li>
+                        <li data-city class="location-info">Chicago</li>
+                        <li data-temp class="location-info">83 F</li>
                         <button class="toggle-fahren-celsius">Display Celsius</button>
                         <form>
                             <label for="fahren-celsius"></label>
@@ -32,15 +32,15 @@
                 <div class="weather-snippets">
                     <div class="weather-card">
                         <p class="weather-card-text">Feels Like</p>
-                        <p class="weather-card-stat">83 F</p>
+                        <p data-feels-like class="weather-card-stat">88 F</p>
                     </div>
                     <div class="weather-card">
                         <p class="weather-card-text">Humidity</p>
-                        <p class="weather-card-stat">70%</p>
+                        <p data-humidity class="weather-card-stat">70%</p>
                     </div>
                     <div class="weather-card">
                         <p class="weather-card-text">Wind Speed</p>
-                        <p class="weather-card-stat">6 MPH</p>
+                        <p data-wind class="weather-card-stat">6 mph</p>
                     </div>
                 </div>
             </div>

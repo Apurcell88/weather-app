@@ -1,8 +1,10 @@
 import './styles.css';
 import { format } from 'date-fns';
+// import displayWeather from './indexDOM';
 
 const location = document.querySelector('[data-location]');
-const form = document.querySelector('form');
+// const form = document.querySelector('form');
+// const searchBar = document.querySelector('input');
 
 async function tapWeatherAPI() {
   try {
@@ -37,17 +39,17 @@ async function Weather() {
         time: format(new Date(), 'h:m aaa'),
         temp: convertKelvinToFahren(weatherData.main.temp),
         feelsLike: convertKelvinToFahren(weatherData.main.feels_like),
-        humidity: weatherData.main.humidity,
+        humidity: `${weatherData.main.humidity}%`,
         wind: convertMeterToMile(weatherData.wind.speed),
       };
     },
   };
 }
 
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const weatherInfo = await Weather();
-  console.log(weatherInfo.createWeather().temp);
-});
+// form.addEventListener('submit', async (e) => {
+//   e.preventDefault();
+//   await displayWeather();
+//   searchBar.value = '';
+// });
 
 export default Weather;
