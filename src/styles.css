@@ -8,9 +8,21 @@
 .main {
     height: 100vh;
     width: 100vw;
-    background: url('C:\Users\apurc\OneDrive\Desktop\odin\weather-app\src\weather-app-background.jpg') no-repeat center center fixed;
+    background: url('C:\Users\apurc\OneDrive\Desktop\odin\weather-app\src\weather-background.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.location-info {
+    color: white;
+}
+
+.weather-card-text {
+    color: white;
+}
+
+.weather-card-stat {
+    color: white;
 }
