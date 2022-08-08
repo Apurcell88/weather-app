@@ -5,6 +5,7 @@
     },
     "extends": [
         "airbnb-base"
+        // "prettier"
     ],
     "parserOptions": {
         "ecmaVersion": "latest",
@@ -12,6 +13,6 @@
     },
     "rules": {
         "linebreak-style": ["error", "windows"],
-        "prettier/prettier": ["error", { "singleQuote": true }]
+        "prettier/prettier": ["off", { "singleQuote": true }]
     }
 }

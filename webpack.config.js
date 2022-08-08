@@ -7,6 +7,7 @@ module.exports = {
     indexDOM: './src/indexDOM.js',
     main: './src/main.js',
   },
+  // entry: ['./src/index.js', './src/indoxDOM.js', './src/main.js'],
   devtool: 'inline-source-map',
   output: {
     filename: '[name].bundle.js',

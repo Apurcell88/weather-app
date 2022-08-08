@@ -1,10 +1,10 @@
 import './styles.css';
 import { format } from 'date-fns';
-// import displayWeather from './indexDOM';
+import displayWeather from './indexDOM';
 
 const location = document.querySelector('[data-location]');
-// const form = document.querySelector('form');
-// const searchBar = document.querySelector('input');
+const form = document.querySelector('form');
+const searchBar = document.querySelector('input');
 
 async function tapWeatherAPI() {
   try {
@@ -46,10 +46,10 @@ async function Weather() {
   };
 }
 
-// form.addEventListener('submit', async (e) => {
-//   e.preventDefault();
-//   await displayWeather();
-//   searchBar.value = '';
-// });
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  await displayWeather();
+  searchBar.value = '';
+});
 
 export default Weather;
