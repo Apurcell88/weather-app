@@ -9,6 +9,7 @@ const wind = document.querySelector('[data-wind]');
 
 async function displayWeather() {
   const weatherInfo = await Weather();
+  // capitalize the first letter of each word for sky and location
 
   clouds.textContent = weatherInfo.createWeather().sky;
   city.textContent = weatherInfo.createWeather().location;

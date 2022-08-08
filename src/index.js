@@ -15,7 +15,7 @@ async function tapWeatherAPI() {
     const weatherData = await response.json();
     return weatherData;
   } catch (err) {
-    console.log(err);
+    return err;
   }
 }
 
