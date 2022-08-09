@@ -13,6 +13,7 @@
     },
     "rules": {
         "linebreak-style": ["error", "windows"],
-        "prettier/prettier": ["off", { "singleQuote": true }]
+        "prettier/prettier": ["off", { "singleQuote": true }],
+        "no-plusplus": "off"
     }
 }

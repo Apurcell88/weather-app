@@ -18,7 +18,11 @@
                     <ul class="location-info-list">
                         <li data-clouds class="location-info">Cloudy</li>
                         <li data-city class="location-info">Chicago</li>
-                        <li data-temp class="location-info">83 F</li>
+                        <div class="date-time">
+                            <li data-date class="location-info date-time">Monday, Aug 9 22</li>
+                            <li data-time class="location-info date-time">3:35 pm</li>
+                        </div>
+                        <li data-temp class="location-info" id="temp">83 F</li>
                         <form>
                             <label for="fahren-celsius"></label>
                             <input data-location type="text" id="fahren-celsius" name="fahren-celsius" required placeholder="Search location">
@@ -26,11 +30,10 @@
                         </form>
                     </ul>
                     
-                    
                 </div>
                 <div class="weather-snippets">
                     <div class="weather-card">
-                        <p class="weather-card-text">Feels Like</p>
+                        <p class="weather-card-text">Feels like</p>
                         <p data-feels-like class="weather-card-stat">88 F</p>
                     </div>
                     <div class="weather-card">
