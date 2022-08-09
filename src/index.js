@@ -36,7 +36,7 @@ async function Weather() {
         sky: weatherData.weather[0].description,
         location: weatherData.name,
         date: format(new Date(), 'EEEE, MMM do yy'),
-        time: format(new Date(), 'h:m aaa'),
+        time: format(new Date(), 'h:mm aaa'),
         temp: convertKelvinToFahren(weatherData.main.temp),
         feelsLike: convertKelvinToFahren(weatherData.main.feels_like),
         humidity: `${weatherData.main.humidity}%`,
