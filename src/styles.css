@@ -117,16 +117,19 @@ img {
 }
 
 .weather-card-stat {
-    margin-left: 0.7rem;
+    margin-left: 1.5rem;
     font-size: 1.1rem;
+    color: white;
 }
 
 .weather-card-text {
     color: white;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     margin-bottom: 0.2rem;
 }
 
-.weather-card-stat {
-    color: white;
+.fa-solid {
+    margin-right: 0.4rem;
 }
+
+/* MEDIA QUERIES */
