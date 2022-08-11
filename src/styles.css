@@ -133,7 +133,14 @@ img {
 
 /* MEDIA QUERIES */
 @media only screen and (min-width: 700px) {
+    input {
+        height: 2.1rem;
+        font-size: 1.2rem;
+    }
+
     button {
+        width: 5.5rem;
+        height: 2.5rem;
         margin-left: 0.3rem;
     }
 
@@ -173,5 +180,70 @@ img {
     
     .fa-solid {
         font-size: 1.6rem;
+    }
+}
+
+@media only screen and (min-width: 860px) {
+    input {
+        height: 2.6rem;
+        font-size: 1.6rem;
+    }
+
+    button {
+        width: 7rem;
+        height: 3.2rem;
+        margin-left: 0.6rem;
+        font-size: 1.5rem;
+    }
+
+    .main-weather-info {
+        width: 55vw;
+        margin-top: 5rem;
+    }
+
+    #clouds {
+        font-size: 3.5rem;
+    }
+    
+    #location {
+        font-size: 1.8rem;
+    }
+    
+    .date-time {
+        font-size: 1.4rem;
+    }
+    
+    #temp {
+        font-size: 4.2rem;
+    }
+
+    .weather-snippets {
+        width: 45vw;
+        height: 25vh;
+        margin-top: 3rem;
+    }
+
+    .weather-card-stat {
+        font-size: 1.4rem;
+        margin-left: 2rem;
+    }
+    
+    .weather-card-text {
+        font-size: 1.4rem;
+    }
+    
+    .fa-solid {
+        font-size: 2rem;
+        margin-right: 1rem;
+    }
+}
+
+@media only screen and (min-width: 980px) {
+    .main-weather-info {
+        width: 60vw;
+    }
+
+    .weather-snippets {
+        width: 40vw;
     }
 }
