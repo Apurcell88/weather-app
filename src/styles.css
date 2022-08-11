@@ -64,7 +64,6 @@ img {
 }
 
 .location-info {
-    font-size: 1.3rem;
     font-weight: 500;
     color: white;
     letter-spacing: 0.5px;
@@ -133,3 +132,46 @@ img {
 }
 
 /* MEDIA QUERIES */
+@media only screen and (min-width: 700px) {
+    button {
+        margin-left: 0.3rem;
+    }
+
+    .main-weather-info {
+        width: 55vw;
+    }
+
+    #clouds {
+        font-size: 2.5rem;
+    }
+    
+    #location {
+        font-size: 1.1rem;
+    }
+    
+    .date-time {
+        font-size: 0.9rem;
+    }
+    
+    #temp {
+        font-size: 3rem;
+    }
+
+    .weather-snippets {
+        width: 45vw;
+        height: 25vh;
+    }
+
+    .weather-card-stat {
+        font-size: 1.2rem;
+        margin-left: 2rem;
+    }
+    
+    .weather-card-text {
+        font-size: 1.2rem;
+    }
+    
+    .fa-solid {
+        font-size: 1.6rem;
+    }
+}
