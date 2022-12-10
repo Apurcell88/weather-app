@@ -16,6 +16,8 @@ input {
 
 input::placeholder {
     padding-left: 10px;
+    color: black;
+    font-weight: 500;
 }
 
 button {
