@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/df28d34ecd.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="weather-conditions-container">
+                <div class="main-weather-info">
+                    <ul class="location-info-list">
+                        <li data-clouds class="location-info" id="clouds">Cloudy</li>
+                        <li data-city class="location-info" id="location">Chicago</li>
+                        <div class="date-time">
+                            <li data-date class="location-info date-time">Monday, Aug 9 22</li>
+                            <li data-time class="location-info date-time">3:35 pm</li>
+                        </div>
+                        <li data-temp class="location-info" id="temp">83 F</li>
+                        <form>
+                            <label for="fahren-celsius"></label>
+                            <input data-location type="text" id="fahren-celsius" name="fahren-celsius" required placeholder="Search location">
+                            <button data-search-btn class="search">Search</button>
+                        </form>
+                    </ul>
+                    
+                </div>
+                <div class="weather-snippets">
+                    <div class="weather-card" id="first-card">
+                        <p class="weather-card-text"><i class="fa-solid fa-temperature-half fa-xl"></i>Feels like</p>
+                        <p data-feels-like class="weather-card-stat"></i>88 F</p>
+                    </div>
+                    <div class="weather-card">
+                        <p class="weather-card-text"><i class="fa-solid fa-cloud-rain fa-xl"></i>Humidity</p>
+                        <p data-humidity class="weather-card-stat">70%</p>
+                    </div>
+                    <div class="weather-card">
+                        <p class="weather-card-text"><i class="fa-solid fa-wind fa-xl"></i>Wind Speed</p>
+                        <p data-wind class="weather-card-stat">6 mph</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <script src="./index.bundle.js"></script>
+    </body>
+</html>
